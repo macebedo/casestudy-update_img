@@ -1,0 +1,5 @@
+Create a basic webpage that will include one of the number images from the course resources.  JavaScript is to be embedded into your HTML document.
+
+Use JavaScript to trigger an alert box when the page is fully loaded into the browser. The alert box should say “Lesson #1 is Done”.
+
+When the number image in the document is clicked with the mouse, the image should change to a different number and an alert box should say “Image Updated.”
