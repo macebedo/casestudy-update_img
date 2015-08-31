@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8">
+    <title>Assignment 1</title>
+    <script type="text/javascript">
+        var flag = '0';
+
+        function change() {
+            <!-- The following function uses the onClick event -->
+            <!-- The if..then statement allows the user to toggle between 0's and 1's when clicked on -->
+            if (flag == '0') {
+                document.getElementById('imgNumber').src = "one.gif"
+                alert('Image Updated'); <!-- alerts the user the image has been updated -->
+                flag = 1;
+            } else {
+                document.getElementById('imgNumber').src = "zero.gif"
+                alert('Image Updated'); <!-- alerts the user the image has been updated -->
+                flag = 0;
+            }
+        }
+    </script>
+</head>
+
+<body onload="alert('Lesson #1 is Done');">
+    <p>
+        <!-- displays the load alert --><strong>Assignment 1</strong></p>
+    <p>Create a basic webpage that will include one of the number images from the course resources.  JavaScript is to be embedded into your HTML document.</p>
+    <p>Use JavaScript to trigger an alert box when the page is fully loaded into the browser. The alert box should say &ldquo;Lesson #1 is Done&rdquo;.</p>
+    <p>When the number image in the document is clicked with the mouse, the image should change to a different number and an alert box should say &ldquo;Image Updated.&rdquo;</p>
+    <p>If you choose to include CSS in your assignment, it must be in an external CSS file.</p>
+    <p><img src="zero.gif" id="imgNumber" onClick="change();" /></p>
+</body>
+
+</html>
